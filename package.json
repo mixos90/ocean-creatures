@@ -1,0 +1,23 @@
+{
+  "name": "ocean_creatures",
+  "version": "1.0.0",
+  "description": "Ocean creatures React",
+  "main": "animals.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixos90/ocean-creatures.git"
+  },
+  "keywords": [
+    "ocean",
+    "creatures"
+  ],
+  "author": "MikeSym",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mixos90/ocean-creatures/issues"
+  },
+  "homepage": "https://github.com/mixos90/ocean-creatures#readme"
+}
