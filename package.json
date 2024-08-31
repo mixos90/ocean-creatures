@@ -2,9 +2,12 @@
   "name": "ocean_creatures",
   "version": "1.0.0",
   "description": "Ocean creatures React",
-  "main": "animals.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/mixos90/ocean-creatures/issues"
   },
-  "homepage": "https://github.com/mixos90/ocean-creatures#readme"
+  "homepage": "https://github.com/mixos90/ocean-creatures#readme",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  }
 }

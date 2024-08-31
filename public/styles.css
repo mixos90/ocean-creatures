@@ -1,0 +1,82 @@
+/* General Layout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 95%;
+  z-index: 1;
+}
+
+#fact {
+  position: fixed;
+  top: 100px;
+  width: 80%;
+  font-size: 5vw;
+  z-index: 2;
+  text-align: center;
+}
+
+.animals {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 240px;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.animal {
+  width: 33.3%;
+  transition: transform 1s linear;
+}
+
+/* Keyframes for specific animal animations */
+@keyframes dolphinRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes lobsterMoveRotate {
+  0% { transform: translateX(0) rotate(0deg); }
+  20% { transform: translateX(-10px) rotate(0deg); }
+  40% { transform: translateX(20px) rotate(0deg); }
+  60% { transform: translateX(-10px) rotate(40deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+@keyframes starfishRotate {
+  0% { transform: rotate(0deg); }
+  33% { transform: rotate(360deg); }
+  66% { transform: rotate(720deg); }
+  100% { transform: rotate(1080deg); }
+}
+
+.rotate-dolphin { animation: dolphinRotate 1s linear; }
+.rotate-lobster { animation: lobsterMoveRotate 1s linear; }
+.rotate-starfish { animation: starfishRotate 3s linear; }
+
+/* Responsive Design */
+@media only screen and (max-width: 670px) {
+  .animals { margin-top: 180px; }
+  #fact { font-size: 24px; }
+}
+
+@media only screen and (max-width: 390px) {
+  .animals { margin-top: 150px; }
+}
+
+@media only screen and (max-width: 300px) {
+  .animals { margin-top: 130px; }
+}
+
+@media only screen and (max-width: 200px) {
+  .animals { margin-top: 120px; }
+}
